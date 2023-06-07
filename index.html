@@ -20,16 +20,15 @@
                 <name>Xinran Liang</name>
               </p>
               <p>
-                I am a first year Ph.D. student in Computer Science at Princeton University.
+                I am a first year PhD student in Computer Science at Princeton University, advised by <a href="https://www.cs.princeton.edu/~olgarus/">Olga Russakovsky</a>.
               </p>
               <p>
-                Previously, I received bachelor degree in Data Science and Applied Math from UC Berkeley. I was an undergraduate researcher at Robot Learning Lab as part of <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence Research</a>, where I was fortunate to be advised by <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, <a href="https://www.cs.cmu.edu/~aditirag/">Aditi Raghunathan</a>, and <a href="http://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>.
+                Previously, I received my bachelor degree in Applied Mathematics and Data Science from UC Berkeley. I did research at Robot Learning Lab as part of <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence Research</a>, where I was advised by <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, <a href="https://www.cs.cmu.edu/~aditirag/">Aditi Raghunathan</a>, and <a href="http://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:xinranliang@princeton.edu">Email</a> &nbsp/&nbsp
                 <a href="data/CV_resume_XinranLiang.pdf">Resume</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=jAbh0hcAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/xinran-liang-6a929a169/">LinkedIn</a> &nbsp/&nbsp
                 <a href="https://twitter.com/xinran_liang">Twitter</a> &nbsp/&nbsp
                 <a href="https://github.com/xinranliang/">Github</a>
               </p>
@@ -40,17 +39,6 @@
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>News</heading>
-            <ul>
-              <li> [Apr 2022] Starting Fall 2022, I will join Princeton University as a Ph.D. student in Computer Science!
-              </li>
-              </ul>
-          </td>
-        </tr>
-      </tbody></table>
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         
       </tbody></table>
@@ -64,28 +52,70 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision and reinforcement learning.
+                I'm currently working on computer vision and reinforcement learning.
               </p>
             </td>
           </tr>
         </tbody></table>
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="stop()" onmouseover="start()">
+    <tr onmouseout="alp_stop()" onmouseover="alp_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='alp1'><img src="images/alp_stage1.png" width="160" height="90" style="position:absolute;top:30px;"></div>
+          <div class="two" id='alp2'><img src="images/alp_stage2.png" width="90" height="90" style="position:absolute;top:30px;left:35px;right:35px;"></div>
+        </div>
+        <script type="text/javascript">
+          function alp_start() {
+            document.getElementById('alp1').style.opacity = "0";
+            document.getElementById('alp2').style.opacity = "1";
+          }
+
+          function alp_stop() {
+            document.getElementById('alp1').style.opacity = "1";
+            document.getElementById('alp2').style.opacity = "0";
+          }
+          alp_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="">
+            <papertitle>ALP: Action-Aware Embodied Learning for Perception</papertitle>
+          </a>
+          <br>
+          <strong>Xinran Liang</strong>,
+          Anthony Han,
+          <a href="https://wilson1yan.github.io/">Wilson Yan</a>,
+          <a href="https://www.cs.cmu.edu/~aditirag/">Aditi Raghunathan</a>,
+          <a href="http://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>
+          <br>
+          <!-- <em>arxiv preprint</em>, 2023 -->
+          <em>under review</em>, 2023
+          <br>
+          <a href="">paper</a>
+    /
+          <a href="">code</a>
+          <p></p>
+          <p>An embodied learning framework based on active exploration for visual representations and perception tasks. 
+            We propose to learn representations from action signals implicitly through reinforcement learning and explicitly via inverse dynamics prediction.</p>
+        </td>
+      </tr>
+
+    <tr onmouseout="rune_stop()" onmouseover="rune_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='rune_image'></div>
-          <img src='images/rune.png' width="160" height="80">
+          <img src='images/rune.png' width="160" height="90" style="position:absolute;top:30px;">
         </div>
         <script type="text/javascript">
-          function start() {
+          function rune_start() {
             document.getElementById('rune_image').style.opacity = "1";
           }
 
-          function stop() {
+          function rune_stop() {
             document.getElementById('rune_image').style.opacity = "0";
           }
-          stop()
+          rune_stop()
         </script>
       </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -99,8 +129,6 @@
           <a href="http://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel*</a>
           <br>
           <em>International Conference on Learning Representations (ICLR)</em>, 2022
-          <br>
-          <em>NeurIPS Deep Reinforcement Learning Workshop</em>, 2021
           <br>
           <a href="https://arxiv.org/abs/2205.12401">paper</a>
     /
@@ -135,7 +163,7 @@
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/data140.png" alt="data140" width="160" height="160">
+              <img src="images/data140.png" alt="data140" width="160" height="160" style="position:relative;left:10px;right:10px;">
             </td>
             <td width="75%" valign="center">
               <p>
@@ -152,7 +180,7 @@
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/data100.png" alt="data100" width="160" height="160">
+              <img src="images/data100.png" alt="data100" width="160" height="160" style="position:relative;left:10px;right:10px;">
             </td>
             <td width="75%" valign="center">
               <p>
