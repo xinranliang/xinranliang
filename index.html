@@ -20,7 +20,7 @@
                 <name>Xinran Liang</name>
               </p>
               <p>
-                I am a second year PhD student in Computer Science at Princeton University, advised by <a href="https://www.cs.princeton.edu/~olgarus/">Olga Russakovsky</a>.
+                I am a PhD student in Computer Science at Princeton University, advised by <a href="https://www.cs.princeton.edu/~olgarus/">Olga Russakovsky</a>.
               </p>
               <p>
                 Previously, I received my bachelor degree in Applied Mathematics and Data Science from UC Berkeley. I did research as part of <a href="https://bair.berkeley.edu/">Berkeley Artificial Intelligence Research</a>, where I was advised by <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, <a href="https://www.cs.cmu.edu/~aditirag/">Aditi Raghunathan</a>, and <a href="http://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>.
@@ -52,13 +52,47 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm currently working on computer vision and deep reinforcement learning.
+                I'm currently working on generative models and its applications in computer vision. Previously, I also worked on deep reinforcement learning and embodied AI.
               </p>
             </td>
           </tr>
         </tbody></table>
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="rune_stop()" onmouseover="rune_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='decouplegen_image'></div>
+          <img src='images/decouplegen.png' width="160" height="70" style="position:absolute;top:35px;">
+        </div>
+        <script type="text/javascript">
+          function decouplegen_start() {
+            document.getElementById('decouplegen_image').style.opacity = "1";
+          }
+
+          function decouplegen_stop() {
+            document.getElementById('decouplegen_image').style.opacity = "0";
+          }
+          decouplegen_stop()
+        </script>
+      </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Personalized Generative Models for Contextual Debiasing</papertitle>
+          <br>
+          <strong>Xinran Liang</strong>,
+          <a href="https://sites.google.com/view/esintureci/home?authuser=0">Esin Tureci</a>,
+          Prachi Sinha,
+          <a href="https://l-yezhu.github.io/">Ye Zhu</a>,
+          <a href="https://www.cs.princeton.edu/~vr23/index.html">Vikram Ramaswamy</a>,
+          <a href="https://www.cs.princeton.edu/~olgarus/">Olga Russakovsky</a>
+          <br>
+          <em>under review</em>, 2024
+          <br>
+          <p></p>
+          <p>We introduce a dataset augmentation method that uses text-to-image generative models for contextual debiasing by adapting personalized finetuning of diffusion models.</p>
+        </td>
+      </tr>
+    
     <tr onmouseout="alp_stop()" onmouseover="alp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -171,6 +205,11 @@
                 <a href="https://princeton-introml.github.io/"> <b>CS 324: Introduction to Machine Learning</b> </a>
                 <br>
                 Graduate Student Instructor: Fall 2023
+              </p>
+              <p>
+                <a href="https://www.cs.princeton.edu/courses/archive/spring24/cos226/"> <b>CS 226: Algorithms and Data Structures</b> </a>
+                <br>
+                Graduate Student Instructor: Spring 2024
               </p>
             </td>
           </tr>
